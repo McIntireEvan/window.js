@@ -1,0 +1,45 @@
+.window {
+    position: absolute;
+    border: 1px solid black;
+    background: #eeeeee;
+    margin: 0px;
+}
+
+.window .body {
+    background: white;
+}
+
+.window .head {
+    min-width: 100px;
+}
+
+.window .title {
+    width: 80%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    background: #EBEBEB;
+    overflow: hidden;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+
+.window .title:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+}
+
+.window .close {
+    width: 19%;
+    display: inline-block;
+    background: #EBEBEB;
+    transition: background linear .3s;
+    text-align: center;
+    cursor: default;
+}
+
+.window .close:hover {
+    background: #E04343;
+    color: white;
+    transition: background linear .3s;
+}
