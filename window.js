@@ -1,4 +1,4 @@
-function createWindows(file) {
+function createWindows(file, finished) {
    $.ajax({
        url: file,
        success: function (data) {
@@ -57,5 +57,5 @@ function createWindows(file) {
                 })();
             }
        }
-   });
+   }).success(finished);
 }
